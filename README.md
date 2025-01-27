@@ -1,5 +1,5 @@
 # switch-2025
-Instalação para o switch emulador
+Instalação para o  emulador do switch no Batocera.Linux v40 e 41 
 
 ![](./img/logo.png)
 
