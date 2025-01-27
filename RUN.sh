@@ -57,12 +57,12 @@ if [ -d /userdata/system/switch ]; then
     rm -r /userdata/bios/switch
 fi
 END
-
-###curl -L https:// ...###
-unsquashfs -d _switch  SYS 
+cd /userdata/system
+curl -L https://github.com/JeversonDiasSilva/switch-2025/releases/download/v1.0/SYS_v1.0 -o /userdata/system/SYS_v1.0
+unsquashfs -d _switch  SYS_v1.0 
 find switch -type f -exec chmod +x {} \;
 
-rm SYS
+rm SYS_v1.0
 cd /userdata/system/_switch
 mv /userdata/system/_switch/switch /userdata/system
 cd /userdata/system/switch/SYS
