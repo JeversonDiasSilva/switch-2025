@@ -81,6 +81,7 @@ mv suyu "/userdata/system/.local/share/suyu"
 mv yuzu "/userdata/system/.local/share/yuzu"
 ############!!!!!!!!!!!!! 
 cp /userdata/system/.local/share/suyu/keys/* /userdata/bios/switch
+curl -L https://github.com/JeversonDiasSilva/switch-2025/releases/download/v1.0/Firmware.17.0.0.zip -o /userdata/bios/switch/Firmware.17.0.0.zip
 
 cd ..
 rm -r share
